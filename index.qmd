@@ -1,15 +1,25 @@
-Welcome to My Portfolio!
+---
+title: "My Data Visualization Portfolio"
+format: html
+date: today
+execute:
+  echo: true
+---
 
-Hello! My nickname is [Giteshk]. This is my Quarto data visualization portfolio showcasing my Python and matplotlib skills.
+# Welcome to My Portfolio!
 
-About This Portfolio
-This portfolio demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents. Each chart below is created using matplotlib and embedded
-directly into this document.
+Hello! My nickname is Giteshk. This is my Quarto data visualization portfolio showcasing my Python and matplotlib skills.
 
-What is Matplotlib?
+## About This Portfolio
+
+This portfolio demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents. Each chart below is created using matplotlib and embedded directly into this document.
+
+## What is Matplotlib?
+
 Matplotlib is a comprehensive plotting library for Python that provides a powerful and flexible framework for creating static, animated, and interactive visualizations. Originally developed by John D. Hunter in 2003, matplotlib has become the de facto standard for data visualization in the Python ecosystem.
 
-Why Matplotlib is Useful:
+### Why Matplotlib is Useful:
+
 - **Versatility**: Create a wide variety of plots including line plots, scatter plots, bar charts, histograms, heatmaps, and more
 - **Publication Quality**: Generate high-resolution figures suitable for academic papers, presentations, and publications
 - **Customization**: Extensive customization options for colors, fonts, styles, and layouts
@@ -18,11 +28,14 @@ Why Matplotlib is Useful:
 - **Professional Output**: Export to multiple formats (PNG, PDF, SVG, etc.) with precise control over resolution and styling
 - **Community Support**: Large, active community with extensive documentation and examples
 
+```{python}
 import matplotlib.pyplot as plt
 import numpy as np
+
 # Create sample data
 x = np.linspace(0, 10, 100)
 y = np.sin(x)
+
 # Create the plot
 plt.figure(figsize=(7, 4.75))
 plt.plot(x, y, 'b-', linewidth=2, label='sin(x)')
@@ -32,8 +45,9 @@ plt.title('My First Matplotlib Chart')
 plt.grid(True, alpha=0.3)
 plt.legend()
 plt.show()
+```
 
-
+```{python}
 # Sample data for bar chart
 categories = ['A', 'B', 'C', 'D', 'E']
 values = [23, 45, 56, 78, 32]
@@ -42,14 +56,18 @@ bars = plt.bar(categories, values, color=['red', 'green', 'blue', 'orange', 'pur
 plt.xlabel('Categories')
 plt.ylabel('Values')
 plt.title('Sample Bar Chart')
+
 # Add value labels on bars
 for bar, value in zip(bars, values):
-plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
-str(value), ha='center', va='bottom')
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+             str(value), ha='center', va='bottom')
 plt.show()
+```
 
+```{python}
 # Scatter plot with random data points
 import random
+
 # Set seed for reproducible results
 np.random.seed(42)
 random.seed(42)
@@ -69,7 +87,9 @@ plt.title('Random Scatter Plot')
 plt.colorbar(scatter, label='Color Scale')
 plt.grid(True, alpha=0.3)
 plt.show()
+```
 
+```{python}
 # Pie chart with sample data
 # Sample data for pie chart
 labels = ['Python', 'JavaScript', 'Java', 'C++', 'R', 'Other']
@@ -90,6 +110,8 @@ for autotext in autotexts:
     autotext.set_fontsize(10)
 
 plt.show()
+```
 
-Conclusion
+## Conclusion
+
 This demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents that can be hosted publicly on GitHub Pages!

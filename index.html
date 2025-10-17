@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-10-16">
 
-<title>index</title>
+<title>My Data Visualization Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -45,41 +81,166 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">My Data Visualization Portfolio</h1>
+</div>
 
 
 
-<p>Welcome to My Portfolio!</p>
-<p>Hello! My nickname is [Giteshk]. This is my Quarto data visualization portfolio showcasing my Python and matplotlib skills.</p>
-<p>About This Portfolio This portfolio demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents. Each chart below is created using matplotlib and embedded directly into this document.</p>
-<p>What is Matplotlib? Matplotlib is a comprehensive plotting library for Python that provides a powerful and flexible framework for creating static, animated, and interactive visualizations. Originally developed by John D. Hunter in 2003, matplotlib has become the de facto standard for data visualization in the Python ecosystem.</p>
-<p>Why Matplotlib is Useful: - <strong>Versatility</strong>: Create a wide variety of plots including line plots, scatter plots, bar charts, histograms, heatmaps, and more - <strong>Publication Quality</strong>: Generate high-resolution figures suitable for academic papers, presentations, and publications - <strong>Customization</strong>: Extensive customization options for colors, fonts, styles, and layouts - <strong>Integration</strong>: Seamlessly works with NumPy, Pandas, and other scientific Python libraries - <strong>Cross-Platform</strong>: Works consistently across different operating systems and environments - <strong>Professional Output</strong>: Export to multiple formats (PNG, PDF, SVG, etc.) with precise control over resolution and styling - <strong>Community Support</strong>: Large, active community with extensive documentation and examples</p>
-<p>import matplotlib.pyplot as plt import numpy as np # Create sample data x = np.linspace(0, 10, 100) y = np.sin(x) # Create the plot plt.figure(figsize=(7, 4.75)) plt.plot(x, y, ‘b-’, linewidth=2, label=‘sin(x)’) plt.xlabel(‘X values’) plt.ylabel(‘Y values’) plt.title(‘My First Matplotlib Chart’) plt.grid(True, alpha=0.3) plt.legend() plt.show()</p>
-<section id="sample-data-for-bar-chart" class="level1">
-<h1>Sample data for bar chart</h1>
-<p>categories = [‘A’, ‘B’, ‘C’, ‘D’, ‘E’] values = [23, 45, 56, 78, 32] plt.figure(figsize=(7, 4.75)) bars = plt.bar(categories, values, color=[‘red’, ‘green’, ‘blue’, ‘orange’, ‘purple’]) plt.xlabel(‘Categories’) plt.ylabel(‘Values’) plt.title(‘Sample Bar Chart’) # Add value labels on bars for bar, value in zip(bars, values): plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1, str(value), ha=‘center’, va=‘bottom’) plt.show()</p>
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="welcome-to-my-portfolio" class="level1">
+<h1>Welcome to My Portfolio!</h1>
+<p>Hello! My nickname is Giteshk. This is my Quarto data visualization portfolio showcasing my Python and matplotlib skills.</p>
+<section id="about-this-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-portfolio">About This Portfolio</h2>
+<p>This portfolio demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents. Each chart below is created using matplotlib and embedded directly into this document.</p>
 </section>
-<section id="scatter-plot-with-random-data-points" class="level1">
-<h1>Scatter plot with random data points</h1>
-<p>import random # Set seed for reproducible results np.random.seed(42) random.seed(42)</p>
+<section id="what-is-matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-matplotlib">What is Matplotlib?</h2>
+<p>Matplotlib is a comprehensive plotting library for Python that provides a powerful and flexible framework for creating static, animated, and interactive visualizations. Originally developed by John D. Hunter in 2003, matplotlib has become the de facto standard for data visualization in the Python ecosystem.</p>
+<section id="why-matplotlib-is-useful" class="level3">
+<h3 class="anchored" data-anchor-id="why-matplotlib-is-useful">Why Matplotlib is Useful:</h3>
+<ul>
+<li><strong>Versatility</strong>: Create a wide variety of plots including line plots, scatter plots, bar charts, histograms, heatmaps, and more</li>
+<li><strong>Publication Quality</strong>: Generate high-resolution figures suitable for academic papers, presentations, and publications</li>
+<li><strong>Customization</strong>: Extensive customization options for colors, fonts, styles, and layouts</li>
+<li><strong>Integration</strong>: Seamlessly works with NumPy, Pandas, and other scientific Python libraries</li>
+<li><strong>Cross-Platform</strong>: Works consistently across different operating systems and environments</li>
+<li><strong>Professional Output</strong>: Export to multiple formats (PNG, PDF, SVG, etc.) with precise control over resolution and styling</li>
+<li><strong>Community Support</strong>: Large, active community with extensive documentation and examples</li>
+</ul>
+<div id="68102d26" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create sample data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.sin(x)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the plot</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">4.75</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y, <span class="st">'b-'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'sin(x)'</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'X values'</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Y values'</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'My First Matplotlib Chart'</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-2-output-1.png" width="608" height="431" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="461ec1fd" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data for bar chart</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'D'</span>, <span class="st">'E'</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>values <span class="op">=</span> [<span class="dv">23</span>, <span class="dv">45</span>, <span class="dv">56</span>, <span class="dv">78</span>, <span class="dv">32</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">4.75</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> plt.bar(categories, values, color<span class="op">=</span>[<span class="st">'red'</span>, <span class="st">'green'</span>, <span class="st">'blue'</span>, <span class="st">'orange'</span>, <span class="st">'purple'</span>])</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Categories'</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Values'</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Sample Bar Chart'</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add value labels on bars</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, value <span class="kw">in</span> <span class="bu">zip</span>(bars, values):</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="dv">1</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>             <span class="bu">str</span>(value), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-3-output-1.png" width="585" height="431" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="f1107c85" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot with random data points</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed for reproducible results</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>random.seed(<span class="dv">42</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate random data points</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>n_points <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>x_scatter <span class="op">=</span> np.random.normal(<span class="dv">50</span>, <span class="dv">15</span>, n_points)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>y_scatter <span class="op">=</span> np.random.normal(<span class="dv">50</span>, <span class="dv">15</span>, n_points)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> np.random.rand(n_points)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> np.random.randint(<span class="dv">20</span>, <span class="dv">200</span>, n_points)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">4.75</span>))</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>scatter <span class="op">=</span> plt.scatter(x_scatter, y_scatter, c<span class="op">=</span>colors, s<span class="op">=</span>sizes, alpha<span class="op">=</span><span class="fl">0.6</span>, cmap<span class="op">=</span><span class="st">'viridis'</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'X Values'</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Y Values'</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Random Scatter Plot'</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>plt.colorbar(scatter, label<span class="op">=</span><span class="st">'Color Scale'</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-4-output-1.png" width="573" height="431" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="14e51a52" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pie chart with sample data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data for pie chart</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">'Python'</span>, <span class="st">'JavaScript'</span>, <span class="st">'Java'</span>, <span class="st">'C++'</span>, <span class="st">'R'</span>, <span class="st">'Other'</span>]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> [<span class="dv">35</span>, <span class="dv">20</span>, <span class="dv">15</span>, <span class="dv">12</span>, <span class="dv">10</span>, <span class="dv">8</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'#ff9999'</span>, <span class="st">'#66b3ff'</span>, <span class="st">'#99ff99'</span>, <span class="st">'#ffcc99'</span>, <span class="st">'#ff99cc'</span>, <span class="st">'#c2c2f0'</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>explode <span class="op">=</span> (<span class="fl">0.1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>)  <span class="co"># explode the first slice (Python)</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">4.75</span>))</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>wedges, texts, autotexts <span class="op">=</span> plt.pie(sizes, explode<span class="op">=</span>explode, labels<span class="op">=</span>labels, colors<span class="op">=</span>colors,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, shadow<span class="op">=</span><span class="va">True</span>, startangle<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Programming Language Popularity'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)  <span class="co"># Equal aspect ratio ensures that pie is drawn as a circle</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize the text properties</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> autotext <span class="kw">in</span> autotexts:</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    autotext.set_color(<span class="st">'white'</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    autotext.set_fontweight(<span class="st">'bold'</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    autotext.set_fontsize(<span class="dv">10</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-5-output-1.png" width="540" height="393" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="generate-random-data-points" class="level1">
-<h1>Generate random data points</h1>
-<p>n_points = 100 x_scatter = np.random.normal(50, 15, n_points) y_scatter = np.random.normal(50, 15, n_points) colors = np.random.rand(n_points) sizes = np.random.randint(20, 200, n_points)</p>
-<p>plt.figure(figsize=(7, 4.75)) scatter = plt.scatter(x_scatter, y_scatter, c=colors, s=sizes, alpha=0.6, cmap=‘viridis’) plt.xlabel(‘X Values’) plt.ylabel(‘Y Values’) plt.title(‘Random Scatter Plot’) plt.colorbar(scatter, label=‘Color Scale’) plt.grid(True, alpha=0.3) plt.show()</p>
 </section>
-<section id="pie-chart-with-sample-data" class="level1">
-<h1>Pie chart with sample data</h1>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents that can be hosted publicly on GitHub Pages!</p>
 </section>
-<section id="sample-data-for-pie-chart" class="level1">
-<h1>Sample data for pie chart</h1>
-<p>labels = [‘Python’, ‘JavaScript’, ‘Java’, ‘C++’, ‘R’, ‘Other’] sizes = [35, 20, 15, 12, 10, 8] colors = [‘#ff9999’, ‘#66b3ff’, ‘#99ff99’, ‘#ffcc99’, ‘#ff99cc’, ‘#c2c2f0’] explode = (0.1, 0, 0, 0, 0, 0) # explode the first slice (Python)</p>
-<p>plt.figure(figsize=(7, 4.75)) wedges, texts, autotexts = plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct=‘%1.1f%%’, shadow=True, startangle=90) plt.title(‘Programming Language Popularity’, fontsize=14, fontweight=‘bold’) plt.axis(‘equal’) # Equal aspect ratio ensures that pie is drawn as a circle</p>
-</section>
-<section id="customize-the-text-properties" class="level1">
-<h1>Customize the text properties</h1>
-<p>for autotext in autotexts: autotext.set_color(‘white’) autotext.set_fontweight(‘bold’) autotext.set_fontsize(10)</p>
-<p>plt.show()</p>
-<p>Conclusion This demonstrates how Quarto can seamlessly integrate Python code and visualizations into professional documents that can be hosted publicly on GitHub Pages!</p>
 </section>
 
 </main>
